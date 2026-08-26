@@ -1,5 +1,8 @@
 # OpenSSF Malicious Packages
 
+[![Total Malicious Package Reports](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fossf.github.io%2Fmalicious-packages%2Fstats%2Ftotal.json&search=%5B0-9%5D%2B&style=flat&label=Malicious%20Package%20Reports&color=%23c32700&cacheSeconds=3600)](https://ossf.github.io/malicious-packages/stats/)
+
+
 This repository is a collection of reports of malicious packages identified in
 Open Source package repositories, consumable via the
 [Open Source Vulnerability (OSV)](https://osv.dev) format.
@@ -16,14 +19,14 @@ dependency confusion, account takeovers, etc are happening more frequently each
 year.
 
 While some protection can be found through various security solutions, there is
-no comprehensive database of malicious packages published to
-open source package repositories.
+no comprehensive database of malicious packages published to open source package
+registries.
 
 ### Objective
 
 The aim of this project and repository is to be a comprehensive, high quality,
-open source database of reports of malicious packages published on open source
-package repositories.
+open source database of reports of malicious packages and source repositories
+published to open source registries.
 
 These public reports help protect the open source community, and provide a data
 source for the security community to improve their ability to find and detect
@@ -34,30 +37,34 @@ new open source malware.
 What is in scope?
 
 - any package that belongs to an ecosystem supported by the
-  [OSV Schema](https://ossf.github.io/osv-schema/)
-- malicious packages published under typosquatting type attacks
-- malicious packages published through account takeover
-- malicious prebuilt binaries downloaded or installed with a package
+  [OSV Schema](https://ossf.github.io/osv-schema/), or any public open source
+  git repository
+- malicious packages or repos published under typosquatting type attacks
+- malicious packages or repos published through account takeover
+- malicious prebuilt binaries downloaded or installed with a package or repo
 - security researcher activity
 - dependency and manifest confusion
 
 Borderline:
 
-- typosquatting, or spam packages that are empty or trivial, while not
+- typosquatting, or spam packages or repos that are empty or trivial, while not
   malicious, are allowed to be present in the dataset
 
 Out-of-scope:
 
-- non-malicious packages
+- non-malicious packages or repos
 - vulnerability reports
 - compromised infrastructure
 - offensive security tools, unless they execute malicious payloads on install
 
-## Definition of a Malicious Package
+## Definition of Malicious
 
-Below is the definition of what this repository considers a malicious package.
+Below is the definition of what this repository considers a malicious package
+or repository.
 
-- a package publicly available in a package registry
+- ether:
+  - a package publicly available in a package registry; or
+  - a git repository publicly accessible on the internet
 - and either:
   - when installed or used, would require some sort of incident response due to
     the loss of confidentiality, availability and/or integrity; or
@@ -145,6 +152,13 @@ them, and are often used by security researchers.
 
 However, offensive security tools that execute malicious payloads during
 installation are considered malicious packages.
+
+## Statistics
+
+Statistics on the number of reports in the repository are automatically updated
+daily.
+
+View them at [ossf.github.io/malicious-packages/stats](https://ossf.github.io/malicious-packages/stats/).
 
 ## Get Involved
 

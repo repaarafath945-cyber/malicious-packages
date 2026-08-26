@@ -1,5 +1,7 @@
+amazon-inspector:
+    IN-MAL-: IN-MAL-2025-000286.json
 ossf-package-analysis:
-    confident/: confident/20250303/220600-npm-vdkweb-utils-99.99.99.json
+    confident/: confident/20251102/232056-pypi-python-requirements-inspector-999.0.1.json
 reversing-labs:
-    RLMA-: RLMA-2025-01248.json
-    RLUA-: RLUA-2025-01204.json
+    RLMA-: RLMA-2025-05558.json
+    RLUA-: RLUA-2025-05510.json
